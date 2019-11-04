@@ -1,0 +1,123 @@
+<div id="swipecard" class="card" (touchstart)="start($event)"
+(swipeleft)="generate()"
+(swiperight)="swiperight($event)"
+(swipeLeftperso)="defaultSwipeLeft()"
+(swipeRightperso)="defaultSwipeRight()"
+(touchmove)="move($event)"
+(touchend)="end($event)">
+
+  <div  class="card__face card__face--front">
+    <ion-card class="info-card">
+      
+   
+      <img src="{{user[inc].photo}}" alt="Photo">
+      <ion-card-header>
+        <ion-card-title>{{user[inc].prenom}} {{user[inc].nom}}</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+
+            <ion-row class="description-card ">
+                <ion-col>
+                    {{user[inc].punchline}}
+                </ion-col>
+                <ion-icon class="icon-i" size="large" (click)="flip()" name="information-circle"></ion-icon>
+            </ion-row>
+           
+           
+      </ion-card-content>
+
+      
+      <ion-row>
+
+        <ion-col class="bottom-card">
+       
+            <ion-card-title class="stat">{{user[inc].taille}}</ion-card-title>
+            <ion-card-title class="stat-value">Taille</ion-card-title>
+        </ion-col>
+        <ion-col class="bottom-card">
+       
+            <ion-card-title class="stat">{{user[inc].poids}}</ion-card-title>
+            <ion-card-title class="stat-value">Poids</ion-card-title>
+        </ion-col>
+        <ion-col class="bottom-card">
+       
+            <ion-card-title class="stat">{{user[inc].age}}</ion-card-title>
+            <ion-card-title class="stat-value">Age</ion-card-title>
+        </ion-col>
+        <ion-col class="bottom-card no-border">
+       
+            <ion-card-title class="stat">{{user[inc].honor}}</ion-card-title>
+            <ion-card-title class="stat-value">Honor</ion-card-title>
+        </ion-col>
+
+      </ion-row>
+
+    </ion-card>
+    
+  </div>
+
+  <div class="card__face card__face--back" > 
+
+
+    <ion-item class="top-desc" lines="none" (click)="testClick()">
+        <ion-avatar slot="start">
+            <img height="40" width="40" class="img-desc" src="{{user[inc].photo}}">
+        </ion-avatar>
+        <ion-label>
+            <h3 class="title-desc" (click)="flip()">" {{user[inc].pseudo}} "</h3>  
+        </ion-label>
+        
+      </ion-item>
+      <ion-item lines="full"> <ion-label class="record">{{user[inc].record}}</ion-label></ion-item>
+      <ion-item  id="social" lines="full" (click)="flip()">
+        <ion-label slot="start"  class="ion-text-wrap">
+          {{user[inc].prenom}} {{user[inc].nom}}
+        </ion-label>
+        <ion-icon color="white" name="logo-instagram"></ion-icon>
+        <ion-icon color="white" name="logo-snapchat"></ion-icon>
+        <ion-icon color="white" name="logo-twitter"></ion-icon>
+        <ion-icon color="white" name="logo-facebook"></ion-icon>
+      </ion-item>
+      <ion-list class="info" (click)="flip()">
+
+
+        
+          <ion-item>
+              <ion-label class="ion-text-wrap">
+            <ion-text>
+              <h3>{{user[inc].genre}} ,{{user[inc].age}} ans</h3>
+              <h3>{{user[inc].nationalite}}</h3>
+              <h3>{{user[inc].region}}</h3>
+              <h3>{{user[inc].taille}} cm</h3>
+              <h3>{{user[inc].poids}} kg</h3>
+             
+            </ion-text></ion-label>
+          </ion-item>
+        
+          <ion-item lines="full">
+            <ion-label class="ion-text-wrap">
+              <ion-text>
+                <h3>Métier : {{user[inc].metier}}</h3>
+              </ion-text>
+              <ion-text>
+                <h3>Etudes : {{user[inc].etudes}}</h3>
+              </ion-text>
+              <ion-text>
+                <h3>Hobby : {{user[inc].activites}}</h3>
+              </ion-text>
+              <ion-text>
+                <h3>" {{user[inc].punchline}} "</h3>
+              </ion-text>
+            </ion-label>
+          </ion-item>
+
+        </ion-list>
+      
+            <ion-button (click)="presentModal()" class="b-viewHistory" expand="block">Historique de Combats</ion-button>
+         
+
+    
+  </div>
+
+</div>

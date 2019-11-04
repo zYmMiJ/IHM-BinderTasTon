@@ -6,14 +6,23 @@ import { FormsModule } from '@angular/forms';
 import { TabsPageRoutingModule } from './tabs.router.module';
 
 import { TabsPage } from './tabs.page';
+import { SharedModule } from '../shared/shared.module';
+import { CardProfileComponent } from '../shared/card-profile/card-profile.component';
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
-    TabsPageRoutingModule
+    TabsPageRoutingModule,
+    SharedModule
   ],
-  declarations: [TabsPage]
+  providers:[CardProfileComponent],
+  declarations: [TabsPage] 
 })
-export class TabsPageModule {}
+export class TabsPageModule {
+
+  constructor(){}
+  
+  
+}

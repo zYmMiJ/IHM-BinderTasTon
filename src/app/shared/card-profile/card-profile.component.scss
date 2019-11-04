@@ -1,0 +1,236 @@
+$p-red: #d20a0a;
+$p-black: #585b63;
+$p-darkblack: #303238;
+.welcome-card img {
+    max-height: 35vh;
+    overflow: hidden;
+  }
+  
+  .card {  
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+    box-shadow: -1px 15px 30px -12px black;
+  }
+  
+  .card.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
+  
+  .card__face {  
+    transition-duration: 2s;
+    position: absolute;
+    width: 100%;
+  
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    backface-visibility: hidden;
+  }
+  
+  .card__face--front {
+  }
+  
+  .card__face--back {
+    transform: rotateY(180deg);
+   // background: $p-darkblack;
+    margin-top: -5%;
+  }
+  
+  .is-invisible{
+    transition-duration: 2s;
+    opacity: 0;
+  }
+  
+
+  
+  .bottom-card{
+    height: 150px;
+    background: $p-black;
+    border-right: 1px solid #ffffff;
+  }
+  
+  .description-card{
+    min-height: 70px;
+    z-index: 0;
+    color: $p-darkblack;
+  }
+  
+  .no-border {
+    border-right: none;
+  }
+  
+  .info-card{
+  background: #f3f3f3;
+  }
+  .stat {
+  
+    font-size: 24px;
+    margin-top: 10%;
+    color: white;
+    z-index: 1;
+  }
+  
+  .stat-value { 
+    color: white;
+    text-transform: uppercase;
+    margin-top: 10%;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  
+  .icon-i{
+    color: $p-red;
+  }
+
+  .fade-out {
+    opacity:0;
+  }
+
+  .fade-in {
+    opacity:1;
+  }
+
+  .out{
+    transition:0.1s linear all;
+  }
+
+
+
+  //Iphone 5
+  @media screen and (min-height: 539px)  {
+    .info-card {
+      height: 410px;
+    }
+    img{
+      height: 200px;
+    }
+  }
+  //
+  @media screen and (min-height: 639px) {
+    .info-card {
+      height: 500px;
+    }
+    img{
+      height: 290px;
+    }
+  }
+  
+  //Mobile SML
+  @media screen and (min-height: 648px) {
+    .info-card {
+      height: 500px;
+    }
+    img{
+      height: 290px;
+    }
+  }
+
+    //p20 lite
+    @media screen and (min-height: 675px) {
+      .info-card {
+        height: 520px;
+      }
+      img{
+        height: 310px;
+      }
+    }
+  //Iphone 6/7/8 +
+  @media screen and (min-height: 730px) {
+    .info-card {
+      height: 580px;
+    }
+    img{
+      height: 350px;
+    }
+  }
+  //Iphone X
+  @media screen and (min-height: 811px) {
+    .info-card {
+      height: 660px;
+    }
+    img{
+      height: 430px;
+    }
+  } 
+  //Pixel 2 XL
+  @media screen and (min-height: 822px) {
+    .info-card {
+      height: 680px;
+    }
+   img{
+      height: 450px;
+    }
+  } 
+  
+  .top-desc{
+    background: #ffffff;
+    box-shadow: -1px 10px 5px -12px black;
+    margin-left: 13%;
+    width: 74%;
+    height: 50px;
+      
+  }
+
+  .title-desc{
+    padding-top: 3%;
+    font-size: 1.4em ;
+  }
+ 
+  .photo-desc{
+    height: 100%;
+    z-index: 2;
+    border: solid $p-darkblack 1px;
+  }
+  .nom-desc{
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 5%;
+    text-align: left;
+  }
+  .secondaryInfo-desc{
+    margin-top: 2%;
+    color:$p-black;
+    font-size: 0.5em;
+    margin-left: 12%;
+    text-align: left;  z-index: 10;
+    background: #ffffff;
+  }
+.info-desc{
+  position: relative;
+  color:$p-black;
+  font-size: 0.5em;
+  margin-top: 2%;
+  z-index: 10;
+  background: #ffffff;
+}
+.subtitle-desc{
+  line-height: 26px;
+  color:$p-black;
+
+}
+.img-desc{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.top-desc{
+
+  margin-top: 5%;
+
+}
+#social{
+  --background: #303238;
+  color:#ffffff;
+}  
+.record{
+  text-align: center; 
+}
+.b-viewHistory{
+  --background:#585b63;
+  color:#ffffff;
+}

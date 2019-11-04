@@ -1,5 +1,7 @@
 {
   "name": "fightClub",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
