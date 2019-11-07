@@ -7,6 +7,9 @@ const routes: Routes = [
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
     
   },
+  { path: 'profile', loadChildren: './pages/profile/profile.module#ProfilePageModule' },
+  { path: 'messages', loadChildren: './pages/messages/messages.module#MessagesPageModule' },
+  { path: 'fight', loadChildren: './pages/fight/fight.module#FightPageModule' },
 
 ];
 @NgModule({

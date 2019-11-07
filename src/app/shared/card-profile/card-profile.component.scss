@@ -8,7 +8,8 @@ $p-darkblack: #303238;
   
   .card {  
     position: relative;
-    width: 100%;
+
+    max-width: 500px;
     cursor: pointer;
     transform-style: preserve-3d;
     transform-origin: center right;
@@ -24,8 +25,7 @@ $p-darkblack: #303238;
     transition-duration: 2s;
     position: absolute;
     width: 100%;
-  
-
+    
     text-align: center;
     font-weight: bold;
     font-size: 40px;

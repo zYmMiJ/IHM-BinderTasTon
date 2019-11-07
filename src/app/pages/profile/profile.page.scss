@@ -1,0 +1,22 @@
+$p-red: #d20a0a;
+$p-black: #585b63;
+$p-darkblack: #303238;
+
+.icon-fight{
+    margin-top: 5px;
+}
+.is-invisible{
+    transition-duration: 0.5s;
+    opacity: 0;
+}
+.state{
+   color:white;
+    position: absolute;
+
+}
+.b-color{
+    background: $p-red;
+}
+.top-b{
+    background: $p-darkblack;
+}

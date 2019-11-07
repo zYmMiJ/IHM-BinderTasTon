@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs.page';
 
+
 const routes: Routes = [
   {
     path: 'tabs',
@@ -17,7 +18,26 @@ const routes: Routes = [
           }
         ]
       },
-
+      {
+        path: '/profile',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../pages/profile/profile.module').then(m => m.ProfilePageModule)
+          }
+        ]
+      },
+      {
+        path: '/messages',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../pages/messages/messages.module').then(m => m.MessagesPageModule)
+          }
+        ]
+      },
 
       {
         path: '',
