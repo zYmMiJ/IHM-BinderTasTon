@@ -5,15 +5,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { MessagesPage } from './messages.page';
-import {MessComponent} from '../../components/mess/mess.component';
-import {FilActComponent} from "../../components/fil-act/fil-act.component";
-
+import { DiscussPage } from './discuss.page';
+import {MessagesPage} from "../messages/messages.page";
 
 const routes: Routes = [
   {
     path: '',
-    component: MessagesPage
+    component: DiscussPage
   }
 ];
 
@@ -24,6 +22,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [MessagesPage, MessComponent, FilActComponent]
+  declarations: [DiscussPage]
 })
-export class MessagesPageModule {}
+export class DiscussPageModule {}

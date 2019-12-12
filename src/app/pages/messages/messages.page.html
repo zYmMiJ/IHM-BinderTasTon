@@ -11,6 +11,16 @@
   </ion-row>
 </ion-grid>
 </ion-header>
-<ion-content>
-  messages
+<ion-content id="changingView">
+  <ion-segment (ionChange)="segmentC($event)" value="message">
+    <ion-segment-button value="message">
+      <ion-label>Messages</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="historique">
+      <ion-label>Historique</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <app-mess id="shadow-dom-message"></app-mess>
+  <app-fil-act id="shadow-dom-historique"></app-fil-act>
 </ion-content>
