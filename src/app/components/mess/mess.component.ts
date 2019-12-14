@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
-import {element} from "protractor";
+import {element} from 'protractor';
 
 @Component({
   selector: 'app-mess',
@@ -19,15 +19,12 @@ export class MessComponent implements OnInit {
     this.route.navigate(['/fight']);
   }
 
-  trash(event){
-    const elem = event.target;
-    const parent = elem.parentElement;
-    const grdParent = parent.parentElement;
-    const gradgra = grdParent.parentElement;
-    gradgra.remove();
+  trash(domElement) {
+    const toast = domElement.el;
+    toast.remove();
   }
 
-  accessToMessage(idroute: string){
+  accessToMessage(idroute: string) {
 
     this.route.navigate(['/discuss/', idroute]);
   }
