@@ -99,7 +99,7 @@ export class ConnectionPage implements OnInit {
       this.toast("Le champ 'pseudo' est obligatoire.");
     }
     else if(city == "") {
-      this.toast("Le champ 'city' est obligatoire.");
+      this.toast("Le champ 'ville' est obligatoire.");
     }
     else if(country == "") {
       this.toast("Le champ 'pays' est obligatoire.");
