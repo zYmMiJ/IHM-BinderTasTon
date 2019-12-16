@@ -52,7 +52,7 @@ export class ConnectionPage implements OnInit {
 
   connexion(user : string, mdp: string) {
     if(this.checkUser(user, mdp)) {
-      this.route.navigate(['/tabs']);
+      this.route.navigate(['/home']);
     }
   }
 

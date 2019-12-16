@@ -18,7 +18,12 @@ import { ViewDetailsPageModule } from './components/view-details/view-details.mo
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,ViewDetailsPageModule],
+  imports: [
+    BrowserModule, 
+    IonicModule.forRoot(), 
+    AppRoutingModule,
+    ViewDetailsPageModule
+  ],
   providers: [
     StatusBar,
     SplashScreen,
