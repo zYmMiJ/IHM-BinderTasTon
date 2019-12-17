@@ -128,4 +128,7 @@ export class ConnectionPage implements OnInit {
   fight() {
     this.route.navigate(['/fight']);
   }
+  match() {
+    this.route.navigate(['/match']);
+  }
 }

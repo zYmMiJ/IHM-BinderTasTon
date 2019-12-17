@@ -7,7 +7,8 @@ const routes: Routes = [
   { path: 'profile', loadChildren: './pages/profile/profile.module#ProfilePageModule' },
   { path: 'messages', loadChildren: './pages/messages/messages.module#MessagesPageModule' },
   { path: 'fight', loadChildren: './pages/fight/fight.module#FightPageModule' },
-  { path: 'connection', loadChildren: './pages/connection/connection.module#ConnectionPageModule' },
+  { path: 'connection', loadChildren: './pages/connection/connection.module#ConnectionPageModule' },  { path: 'match', loadChildren: './pages/match/match.module#MatchPageModule' },
+
 
 
 ];

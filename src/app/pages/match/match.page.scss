@@ -1,0 +1,23 @@
+.view{
+    position: relative;
+    margin-left: 45%;
+    z-index: 0;
+}
+.info-hist{
+    position: absolute;
+    z-index: 10;
+ }
+ .middle{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+ }
+ .vs{
+     margin-top: 2%;
+ }
+
+.info{
+    text-align: center;
+    border-bottom: 1px solid #c7c4c4;
+}
