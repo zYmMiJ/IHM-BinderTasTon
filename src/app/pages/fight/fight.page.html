@@ -1,9 +1,54 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>fight</ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content>
 
+    <ion-item  (click)="victoryAlert()" lines="none">
+      <ion-label class="victory" >
+        <h1 class="title-victory">
+          <ion-icon name="done-all" style="font-size: 40px"></ion-icon>
+          <br/>Victory 
+        </h1>
+      </ion-label>
+    </ion-item>
+
+    <ion-item  (click)="defeatAlert()"  lines="none">
+      <ion-label class="defeat" >
+        <h1 class="title-defeat">
+          <ion-icon name="close" style="font-size: 40px"></ion-icon>
+          <br/>Defeat 
+        </h1>
+      </ion-label>
+    </ion-item>
+
+    <ion-item  (click)="fuiteAlert()" lines="none">
+      <ion-label class="fuite" >
+        <h1 class="title-fuite">
+          <i class="material-icons" style="font-size: 40px" >directions_run</i>
+          <br/>Fuire  
+        </h1>
+        
+      </ion-label>
+    </ion-item>
+      
 </ion-content>
+  <!-- fab placed in the center of the content with a list on each side -->
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="settings"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list (click)="defeat()" side="top">
+      <ion-fab-button>D</ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list (click)="victory()" side="start">
+      <ion-fab-button>V</ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list (click)="fuite()" side="end">
+      <ion-fab-button>F</ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+ <!-- -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon (click)="connection()" name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>

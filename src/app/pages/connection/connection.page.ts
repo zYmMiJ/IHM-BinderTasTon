@@ -125,4 +125,7 @@ export class ConnectionPage implements OnInit {
     toast.present();
   }
 
+  fight() {
+    this.route.navigate(['/fight']);
+  }
 }
