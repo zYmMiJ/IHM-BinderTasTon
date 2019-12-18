@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ToastController } from '@ionic/angular';
+import { ToastController, AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-profile',
@@ -24,7 +24,7 @@ export class ProfilePage implements OnInit {
   };
   private _edition: boolean;
 
-  constructor(private route: Router, private toastController: ToastController) { }
+  constructor(private route: Router, private toastController: ToastController, public alertController: AlertController) { }
 
   ngOnInit() {
   }
@@ -222,5 +222,25 @@ export class ProfilePage implements OnInit {
       cssClass: "text-align: center"
     });
     toast.present();
+  }
+
+  async presentAlertConfirm() {
+    const alert = await this.alertController.create({
+      header: 'Déconnexion',
+      message: 'Voulez-vous vraiment vous déconnecter ?',
+      buttons: [
+        {
+          text: 'Non',
+          role: 'cancel',
+          cssClass: 'secondary'
+        }, {
+          text: 'Oui',
+          handler: () => {
+            this.route.navigate(['/']);
+          }
+        }
+      ]
+    });
+    await alert.present();
   }
 }
