@@ -5,16 +5,17 @@ import { RouteReuseStrategy } from '@angular/router';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-
+import { AutosizeModule } from 'ngx-autosize';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-//Modal
+// Modal
 import { ViewDetailsPageModule } from './components/view-details/view-details.module';
 
 
 
 
+// noinspection AngularInvalidImportedOrDeclaredSymbol
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -22,7 +23,9 @@ import { ViewDetailsPageModule } from './components/view-details/view-details.mo
     BrowserModule, 
     IonicModule.forRoot(), 
     AppRoutingModule,
-    ViewDetailsPageModule
+    ViewDetailsPageModule,
+    AutosizeModule
+
   ],
   providers: [
     StatusBar,
