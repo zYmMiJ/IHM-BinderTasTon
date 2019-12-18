@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ToastController, AlertController } from '@ionic/angular';
+import { ToastController, AlertController, PopoverController } from '@ionic/angular';
 
 @Component({
   selector: 'app-profile',
@@ -33,72 +33,36 @@ export class ProfilePage implements OnInit {
     return this.usr.name;
   }
 
-  set name(name : string) {
-    this.usr.name = name;
-  }
-
   get surname() : string {
     return this.usr.surname;
-  }
-
-  set surname(surname : string) {
-    this.usr.surname = surname;
   }
 
   get nationality() : string {
     return this.usr.nationality;
   }
 
-  set nationality(nationality : string) {
-    this.usr.nationality = nationality;
-  }
-
   get city() : string {
     return this.usr.city;
-  }
-
-  set city(city : string) {
-    this.usr.city = city;
   }
 
   get pseudo() : string {
     return this.usr.pseudo;
   }
 
-  set pseudo(pseudo : string) {
-    this.usr.pseudo = pseudo;
-  }
-
   get size() : string {
     return this.usr.size;
-  }
-
-  set size(size : string) {
-    this.usr.size = size;
   }
 
   get weight() : string {
     return this.usr.weight;
   }
 
-  set weight(weight : string) {
-    this.usr.weight = weight;
-  }
-
   get studies() : string {
     return this.usr.studies;
   }
 
-  set studies(studies : string) {
-    this.usr.studies = studies;
-  }
-
   get punchline() : string {
     return this.usr.punchline;
-  }
-
-  set punchline(punchline : string) {
-    this.usr.punchline = punchline;
   }
 
   get birth() : string {
@@ -142,16 +106,16 @@ export class ProfilePage implements OnInit {
         this.toast("Le champ 'weight' est obligatoire.");
       }
       else {
-        this.surname = esurname;
-        this.name = ename;
-        this.nationality = enationality;
-        this.city = ecity;
-        this.country = ecountry;
-        this.pseudo = epseudo;
-        this.size = esize;
-        this.weight = eweight;
-        this.studies = estudies;
-        this.punchline = epunchline;
+        this.usr.surname = esurname;
+        this.usr.name = ename;
+        this.usr.nationality = enationality;
+        this.usr.city = ecity;
+        this.usr.country = ecountry;
+        this.usr.pseudo = epseudo;
+        this.usr.size = esize;
+        this.usr.weight = eweight;
+        this.usr.studies = estudies;
+        this.usr.punchline = epunchline;
         this.edition();
       }
   }
