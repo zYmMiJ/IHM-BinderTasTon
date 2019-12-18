@@ -1,13 +1,13 @@
 import { Component, Inject, forwardRef } from '@angular/core';
-import { CardProfileComponent } from '../shared/card-profile/card-profile.component';
+import { CardProfileComponent } from '../../shared/card-profile/card-profile.component';
 import { AlertController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-tabs',
-  templateUrl: 'tabs.page.html',
-  styleUrls: ['tabs.page.scss']
+  selector: 'app-home',
+  templateUrl: 'home.page.html',
+  styleUrls: ['home.page.scss']
 })
-export class TabsPage {
+export class HomePage {
 
   constructor(public cardcomp:CardProfileComponent,public alertController: AlertController) {}
 

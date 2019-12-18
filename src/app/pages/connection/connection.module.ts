@@ -5,16 +5,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { MessagesPage } from './messages.page';
-
-import {MessComponent} from '../../components/mess/mess.component';
-import {FilActComponent} from '../../components/fil-act/fil-act.component';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { ConnectionPage } from './connection.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: MessagesPage
+    component: ConnectionPage
   }
 ];
 
@@ -23,9 +19,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    SharedModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [MessagesPage, MessComponent, FilActComponent]
+  declarations: [ConnectionPage]
 })
-export class MessagesPageModule {}
+export class ConnectionPageModule {}

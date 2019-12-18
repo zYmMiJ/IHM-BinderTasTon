@@ -11,7 +11,7 @@
       
    
       <img src="{{user[inc].photo}}" alt="Photo">
-      <ion-card-header>
+      <ion-card-header (click)="flip()">
         <ion-card-title>{{user[inc].prenom}} {{user[inc].nom}}</ion-card-title>
       </ion-card-header>
     
@@ -59,8 +59,9 @@
 
   <div class="card__face card__face--back" > 
 
-
+   
     <ion-item class="top-desc" lines="none" (click)="testClick()">
+      
         <ion-avatar slot="start">
             <img height="40" width="40" class="img-desc" src="{{user[inc].photo}}">
         </ion-avatar>
@@ -114,6 +115,12 @@
 
         </ion-list>
         <ion-button (click)="presentModal()" class="b-viewHistory" expand="block">Historique de Combats</ion-button>
-         
+
+          <ion-fab-button (click)="flip()" style="margin-top:5%;"color="light" class="middle">
+            <ion-icon style="color: #585b63;"name="arrow-round-back"></ion-icon>
+          </ion-fab-button>
+      
+        
   </div>
+
 </div>

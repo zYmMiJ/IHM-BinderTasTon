@@ -1,0 +1,146 @@
+<!-- Back button with a default href -->
+<ion-header >
+  <ion-toolbar>
+    <ion-button (click)="back()"><ion-icon name="arrow-round-back"></ion-icon></ion-button>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content id="connexion">
+  <ion-card class="ion-text-center">
+    <svg class="fightState icon-fight ion-margin-top" width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 395.94 406.88">
+      <defs><style>.cls-1{fill:#ffffff;}.cls-2{fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px;}</style></defs>
+      <title>p1</title><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1">
+        <polygon class="cls-1" points="368.95 332.93 354.95 404.93 208.59 370.93 192.7 320.93 368.95 332.93"/>
+        <polygon class="cls-1" points="393.95 41.93 368.95 295.93 294.95 295.93 282.95 110.93 265.7 116.1 256.45 296.43 208.45 295.43 176.95 142.93 164.1 149.4 170.53 295.93 117.96 297.32 87.95 168.93 78.95 174.93 89.95 296.93 41.95 295.93 1.95 122.93 248.95 1.93 393.95 41.93"/>
+        <line class="cls-2" x1="41.95" y1="295.93" x2="89.95" y2="296.93"/><line class="cls-2" x1="1.95" y1="122.93" x2="41.95" y2="295.93"/>
+        <line class="cls-2" x1="1.95" y1="122.93" x2="248.95" y2="1.93"/><line class="cls-2" x1="393.95" y1="41.93" x2="248.95" y2="1.93"/>
+        <line class="cls-2" x1="393.95" y1="41.93" x2="368.95" y2="295.93"/><line class="cls-2" x1="368.95" y1="295.93" x2="294.95" y2="295.93"/>
+        <line class="cls-2" x1="282.95" y1="110.93" x2="294.95" y2="295.93"/><line class="cls-2" x1="265.7" y1="116.1" x2="282.95" y2="110.93"/>
+        <polyline class="cls-2" points="256.38 297.76 256.45 296.43 265.7 116.1"/><line class="cls-2" x1="208.45" y1="295.43" x2="256.45" y2="296.43"/>
+        <line class="cls-2" x1="176.95" y1="142.93" x2="208.45" y2="295.43"/><line class="cls-2" x1="164.1" y1="149.4" x2="176.95" y2="142.93"/>
+        <line class="cls-2" x1="170.53" y1="295.93" x2="164.1" y2="149.4"/><line class="cls-2" x1="117.96" y1="297.32" x2="170.53" y2="295.93"/>
+        <line class="cls-2" x1="87.95" y1="168.93" x2="117.96" y2="297.32"/><line class="cls-2" x1="78.95" y1="174.93" x2="87.95" y2="168.93"/>
+        <line class="cls-2" x1="89.95" y1="296.93" x2="78.95" y2="174.93"/><line class="cls-2" x1="192.7" y1="320.93" x2="368.95" y2="332.93"/>
+        <line class="cls-2" x1="208.59" y1="370.93" x2="192.7" y2="320.93"/><line class="cls-2" x1="208.59" y1="370.93" x2="354.95" y2="404.93"/>
+        <line class="cls-2" x1="354.95" y1="404.93" x2="368.95" y2="332.93"/></g></g></svg>
+
+    <ion-card-title class="ion-margin-top">Connection</ion-card-title>
+
+    <ion-card-content>
+      <ion-input #user placeholder="Nom d'utilisateur, téléphone ou email" type="text"></ion-input>
+      <ion-input #mdp placeholder="Mot de passe" type="password"></ion-input>
+      <ion-button id="btn" slot="start" shape="round" color="primary" (click)="connexion(user.value, mdp.value)">Se connecter</ion-button>
+
+      <ion-item href="#" (click)="forgotPsw()" class="ion-text-center">
+        <ion-label color="secondary">
+          Mot de passe oublié?
+        </ion-label>
+      </ion-item>
+      <ion-item href="#" (click)="newAccount()" class="ion-text-center">
+        <ion-label color="secondary">
+          Créer un compte
+        </ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
+
+<ion-content id="forgotPsw">
+  <ion-card class="ion-text-center">
+    <svg class="fightState icon-fight ion-margin-top" width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 395.94 406.88">
+      <defs><style>.cls-1{fill:#ffffff;}.cls-2{fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px;}</style></defs>
+      <title>p1</title><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1">
+        <polygon class="cls-1" points="368.95 332.93 354.95 404.93 208.59 370.93 192.7 320.93 368.95 332.93"/>
+        <polygon class="cls-1" points="393.95 41.93 368.95 295.93 294.95 295.93 282.95 110.93 265.7 116.1 256.45 296.43 208.45 295.43 176.95 142.93 164.1 149.4 170.53 295.93 117.96 297.32 87.95 168.93 78.95 174.93 89.95 296.93 41.95 295.93 1.95 122.93 248.95 1.93 393.95 41.93"/>
+        <line class="cls-2" x1="41.95" y1="295.93" x2="89.95" y2="296.93"/><line class="cls-2" x1="1.95" y1="122.93" x2="41.95" y2="295.93"/>
+        <line class="cls-2" x1="1.95" y1="122.93" x2="248.95" y2="1.93"/><line class="cls-2" x1="393.95" y1="41.93" x2="248.95" y2="1.93"/>
+        <line class="cls-2" x1="393.95" y1="41.93" x2="368.95" y2="295.93"/><line class="cls-2" x1="368.95" y1="295.93" x2="294.95" y2="295.93"/>
+        <line class="cls-2" x1="282.95" y1="110.93" x2="294.95" y2="295.93"/><line class="cls-2" x1="265.7" y1="116.1" x2="282.95" y2="110.93"/>
+        <polyline class="cls-2" points="256.38 297.76 256.45 296.43 265.7 116.1"/><line class="cls-2" x1="208.45" y1="295.43" x2="256.45" y2="296.43"/>
+        <line class="cls-2" x1="176.95" y1="142.93" x2="208.45" y2="295.43"/><line class="cls-2" x1="164.1" y1="149.4" x2="176.95" y2="142.93"/>
+        <line class="cls-2" x1="170.53" y1="295.93" x2="164.1" y2="149.4"/><line class="cls-2" x1="117.96" y1="297.32" x2="170.53" y2="295.93"/>
+        <line class="cls-2" x1="87.95" y1="168.93" x2="117.96" y2="297.32"/><line class="cls-2" x1="78.95" y1="174.93" x2="87.95" y2="168.93"/>
+        <line class="cls-2" x1="89.95" y1="296.93" x2="78.95" y2="174.93"/><line class="cls-2" x1="192.7" y1="320.93" x2="368.95" y2="332.93"/>
+        <line class="cls-2" x1="208.59" y1="370.93" x2="192.7" y2="320.93"/><line class="cls-2" x1="208.59" y1="370.93" x2="354.95" y2="404.93"/>
+        <line class="cls-2" x1="354.95" y1="404.93" x2="368.95" y2="332.93"/></g></g></svg>
+
+    <ion-card-title class="ion-margin-top">Mot de passe oublié ?</ion-card-title>
+    <ion-card-content>
+      <ion-input #emailPsw placeholder="Entrez votre numéro de téléphone ou email" type="text"></ion-input>
+      <ion-button id="btn" slot="start" shape="round" color="primary" (click)="resetPsw(emailPsw.value)">Envoyer</ion-button>
+    </ion-card-content>
+    <ion-text>Après l'envoie, vous recevrez par téléphone ou par email (selon se que vous aurez complété) un lien vous permettant de changer votre mot de passe</ion-text>
+  </ion-card>
+</ion-content>
+
+
+
+<ion-content id="newAccount">
+  <ion-card class="ion-text-center">
+    <svg class="fightState icon-fight ion-margin-top" width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 395.94 406.88">
+      <defs><style>.cls-1{fill:#ffffff;}.cls-2{fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px;}</style></defs>
+      <title>p1</title><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1">
+        <polygon class="cls-1" points="368.95 332.93 354.95 404.93 208.59 370.93 192.7 320.93 368.95 332.93"/>
+        <polygon class="cls-1" points="393.95 41.93 368.95 295.93 294.95 295.93 282.95 110.93 265.7 116.1 256.45 296.43 208.45 295.43 176.95 142.93 164.1 149.4 170.53 295.93 117.96 297.32 87.95 168.93 78.95 174.93 89.95 296.93 41.95 295.93 1.95 122.93 248.95 1.93 393.95 41.93"/>
+        <line class="cls-2" x1="41.95" y1="295.93" x2="89.95" y2="296.93"/><line class="cls-2" x1="1.95" y1="122.93" x2="41.95" y2="295.93"/>
+        <line class="cls-2" x1="1.95" y1="122.93" x2="248.95" y2="1.93"/><line class="cls-2" x1="393.95" y1="41.93" x2="248.95" y2="1.93"/>
+        <line class="cls-2" x1="393.95" y1="41.93" x2="368.95" y2="295.93"/><line class="cls-2" x1="368.95" y1="295.93" x2="294.95" y2="295.93"/>
+        <line class="cls-2" x1="282.95" y1="110.93" x2="294.95" y2="295.93"/><line class="cls-2" x1="265.7" y1="116.1" x2="282.95" y2="110.93"/>
+        <polyline class="cls-2" points="256.38 297.76 256.45 296.43 265.7 116.1"/><line class="cls-2" x1="208.45" y1="295.43" x2="256.45" y2="296.43"/>
+        <line class="cls-2" x1="176.95" y1="142.93" x2="208.45" y2="295.43"/><line class="cls-2" x1="164.1" y1="149.4" x2="176.95" y2="142.93"/>
+        <line class="cls-2" x1="170.53" y1="295.93" x2="164.1" y2="149.4"/><line class="cls-2" x1="117.96" y1="297.32" x2="170.53" y2="295.93"/>
+        <line class="cls-2" x1="87.95" y1="168.93" x2="117.96" y2="297.32"/><line class="cls-2" x1="78.95" y1="174.93" x2="87.95" y2="168.93"/>
+        <line class="cls-2" x1="89.95" y1="296.93" x2="78.95" y2="174.93"/><line class="cls-2" x1="192.7" y1="320.93" x2="368.95" y2="332.93"/>
+        <line class="cls-2" x1="208.59" y1="370.93" x2="192.7" y2="320.93"/><line class="cls-2" x1="208.59" y1="370.93" x2="354.95" y2="404.93"/>
+        <line class="cls-2" x1="354.95" y1="404.93" x2="368.95" y2="332.93"/></g></g></svg>
+
+    <ion-card-title class="ion-margin-top">Créer votre compte !</ion-card-title>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Nom</ion-label>
+        <ion-input #sname type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Prénom</ion-label>
+        <ion-input #name type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Date de naissance</ion-label>
+        <ion-datetime #birth displayFormat="DD/MM/YY" value={{maxDate}} min={{minDate}} max={{maxDate}}></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input #email type="email" inputmode="email" pattern="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Pseudo</ion-label>
+        <ion-input #pseudo type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Ville</ion-label>
+        <ion-input #city type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Pays</ion-label>
+        <ion-input #country type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Taille</ion-label>
+        <ion-input #size type="number" min="100"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Poids</ion-label>
+        <ion-input #weight type="number" min="50"></ion-input>
+      </ion-item>
+
+      <ion-button id="btn" slot="start" shape="round" color="primary" (click)="creatAccount(sname.value,name.value,birth.value,email.value,pseudo.value,city.value,country.value,size.value,weight.value)">Créer mon compte</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-button (click)="match()" color="primary">Match</ion-button>
+<ion-button (click)="fight()" color="primary">Fight</ion-button>

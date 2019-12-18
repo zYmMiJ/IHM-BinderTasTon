@@ -1,18 +1,161 @@
-<ion-header>
-  <ion-grid class="top-b">
+<app-header></app-header>
+
+<ion-content class="profil">
+  <div class="ion-text-center">
+    <img class="circle-pic" src="../../assets/img/user/booba-.jpg">
+    <ion-title>{{name}} {{surname}}, {{birth}} ans</ion-title>
+  </div>
+  <br/>
+
+  <ion-grid id="infos" class="ion-align-items-start">
     <ion-row>
-      <ion-col class="ion-text-center" (click)="goToFightSwipe()">
-        <svg class="fightState icon-fight" width="30" height="30" xmlns="http://www.w3.org/2000/svg" 
-        viewBox="0 0 395.94 406.88"><defs><style>.cls-1{fill:#ffffff;}.cls-2{fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:4px;}</style></defs><title>p1</title><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><polygon class="cls-1" points="368.95 332.93 354.95 404.93 208.59 370.93 192.7 320.93 368.95 332.93"/><polygon class="cls-1" points="393.95 41.93 368.95 295.93 294.95 295.93 282.95 110.93 265.7 116.1 256.45 296.43 208.45 295.43 176.95 142.93 164.1 149.4 170.53 295.93 117.96 297.32 87.95 168.93 78.95 174.93 89.95 296.93 41.95 295.93 1.95 122.93 248.95 1.93 393.95 41.93"/><line class="cls-2" x1="41.95" y1="295.93" x2="89.95" y2="296.93"/><line class="cls-2" x1="1.95" y1="122.93" x2="41.95" y2="295.93"/><line class="cls-2" x1="1.95" y1="122.93" x2="248.95" y2="1.93"/><line class="cls-2" x1="393.95" y1="41.93" x2="248.95" y2="1.93"/><line class="cls-2" x1="393.95" y1="41.93" x2="368.95" y2="295.93"/><line class="cls-2" x1="368.95" y1="295.93" x2="294.95" y2="295.93"/><line class="cls-2" x1="282.95" y1="110.93" x2="294.95" y2="295.93"/><line class="cls-2" x1="265.7" y1="116.1" x2="282.95" y2="110.93"/><polyline class="cls-2" points="256.38 297.76 256.45 296.43 265.7 116.1"/><line class="cls-2" x1="208.45" y1="295.43" x2="256.45" y2="296.43"/><line class="cls-2" x1="176.95" y1="142.93" x2="208.45" y2="295.43"/><line class="cls-2" x1="164.1" y1="149.4" x2="176.95" y2="142.93"/><line class="cls-2" x1="170.53" y1="295.93" x2="164.1" y2="149.4"/><line class="cls-2" x1="117.96" y1="297.32" x2="170.53" y2="295.93"/><line class="cls-2" x1="87.95" y1="168.93" x2="117.96" y2="297.32"/><line class="cls-2" x1="78.95" y1="174.93" x2="87.95" y2="168.93"/><line class="cls-2" x1="89.95" y1="296.93" x2="78.95" y2="174.93"/><line class="cls-2" x1="192.7" y1="320.93" x2="368.95" y2="332.93"/><line class="cls-2" x1="208.59" y1="370.93" x2="192.7" y2="320.93"/><line class="cls-2" x1="208.59" y1="370.93" x2="354.95" y2="404.93"/><line class="cls-2" x1="354.95" y1="404.93" x2="368.95" y2="332.93"/></g></g></svg>
-      </ion-col>
-      <ion-col (click)="goToMessage()" class="ion-text-center">
-        <a class="btn-floating b-color"><i class="material-icons">chat_bubble</i></a>
-      </ion-col>
-      </ion-row>
+      <ion-col size="3">Nationalité : </ion-col>
+      <ion-col>{{nationality}}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="3">Ville : </ion-col>
+      <ion-col>{{city}}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="3">Pseudo : </ion-col>
+      <ion-col>{{pseudo}}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="3">Taille : </ion-col>
+      <ion-col>{{size}}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="3">Poids : </ion-col>
+      <ion-col>{{weight}}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="3">Etudes : </ion-col>
+      <ion-col>{{studies}}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="3">Punchline : </ion-col>
+      <ion-col>{{punchline}}</ion-col>
+    </ion-row>
   </ion-grid>
-</ion-header>
-
-<ion-content>
-Profile
-
 </ion-content>
+
+<ion-toolbar class="profil">
+  <ion-grid>
+    <ion-row class="ion-align-items-center">
+      <ion-col class="ion-text-center">
+        <ion-button shape="round" size="large" class="bottom-buttons marginBot" (click)="option()">
+          <ion-icon slot="icon-only" name="settings"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <ion-button shape="round" size="large" class="bottom-buttons marginTop" (click)="toast('prendre une photo')">
+          <ion-icon slot="icon-only" name="camera"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <ion-button shape="round" size="large" class="bottom-buttons marginBot" (click)="edition()">
+          <ion-icon slot="icon-only" name="create"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-toolbar>
+
+<!-- Bouton Options -->
+
+<ion-content class="option">
+
+  <ion-list>
+    <ion-item>
+      <ion-label>En oral d'IHM</ion-label>
+      <ion-toggle checked disabled="true"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Maximisé la note d'IHM</ion-label>
+      <ion-toggle></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Corruption</ion-label>
+      <ion-toggle [(ngModel)]="sausage" disabled="true"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Mode nuit</ion-label>
+      <ion-toggle id="toggle" [(ngModel)]="forFun" (ionChange)="forFunFunc()"></ion-toggle>
+    </ion-item>
+      
+    <ion-button expand="block" fill="outline" color="danger" (click)="presentAlertConfirm()">Déconnexion</ion-button>
+  </ion-list>
+</ion-content>
+
+<ion-toolbar class="option">
+  <ion-grid>
+    <ion-row class="ion-align-items-center">
+      <ion-col class="ion-text-center">
+        <ion-button shape="round" size="large" class="bottom-buttons" (click)=option()> 
+          <ion-icon slot="icon-only" name="arrow-round-back"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-toolbar>
+
+<!-- Bouton Edition -->
+
+<ion-content class="edit">
+  <ion-item>
+    <ion-label position="floating">Nom</ion-label>
+    <ion-input #esurname type="text" value={{surname}}></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Prénom</ion-label>
+    <ion-input #ename type="text" value={{name}}></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Nationalité</ion-label>
+    <ion-input #enationality type="text" value={{nationality}}></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Ville</ion-label>
+    <ion-input #ecity type="text" value={{city}}></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Pays</ion-label>
+    <ion-input #ecountry type="text" value={{country}}></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Pseudo</ion-label>
+    <ion-input #epseudo type="text" value={{pseudo}}></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Taille</ion-label>
+    <ion-input #esize type="number" min="100" value={{size}}></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Poids</ion-label>
+    <ion-input #eweight type="number" min="50" value={{weight}}></ion-input>
+  </ion-item> 
+  <ion-item>
+    <ion-label position="floating">Etudes</ion-label>
+    <ion-input #estudies type="text" value={{studies}}></ion-input>
+  </ion-item>  
+  <ion-item>
+    <ion-label position="floating">Punchline</ion-label>
+    <ion-input #epunchline type="text" value={{punchline}}></ion-input>
+  </ion-item>  
+</ion-content>
+
+<ion-toolbar class="edit">
+    <ion-grid>
+      <ion-row class="ion-align-items-center">
+        <ion-col class="ion-text-center">
+          <ion-button shape="round" size="large" class="bottom-buttons" 
+          (click)="editProfil(esurname.value, ename.value, enationality.value, ecity.value, ecountry.value, epseudo.value, esize.value, eweight.value, estudies.value, epunchline.value)">
+            <ion-icon slot="icon-only" name="create"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>

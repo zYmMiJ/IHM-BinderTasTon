@@ -20,3 +20,42 @@ $p-darkblack: #303238;
 .top-b{
     background: $p-darkblack;
 }
+
+.circle-pic{
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.bottom-buttons {
+    --padding-start: 10px;
+    --padding-end: 10px;
+}
+
+.elevated-button {
+    margin-bottom: 100px;
+}
+
+.marginTop {
+    margin-top: 25px;
+}
+
+.marginBot {
+    margin-bottom: 50px;
+}
+
+.edit {
+    display: none;
+}
+
+.option {
+    display: none;
+}
+
+#infos > ion-row > ion-col {
+    background-color: #f7f7f7;
+    border: solid 1px #ddd;
+    width: 20%;
+  }

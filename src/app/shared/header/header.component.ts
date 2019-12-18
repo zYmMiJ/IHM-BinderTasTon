@@ -21,9 +21,6 @@ export class HeaderComponent implements OnInit {
     this.route.navigate(['/profile']);
   }
   fightState(){
-    let sleep = document.querySelector('.sleepState');
-    sleep.classList.toggle('is-invisible');
-    let fight = document.querySelector('.fightState');
-    fight.classList.toggle('is-invisible');
+    this.route.navigate(['/home']);
   }
 }

@@ -1,0 +1,39 @@
+.victory{
+    height: 100px;
+    background: #027208;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin-top: 20%;
+}
+.defeat{
+    height: 100px;
+    background: #ff0303;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin-top: 20%;
+}
+.fuite{
+    height: 100px;
+    background: #ff4bd8;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin-top: 20%;
+}
+.title-victory{
+    background: #027208;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+}
+.title-defeat{
+    background: #ff0303;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+}
+.title-fuite{
+    background: #ff4bd8;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+}
