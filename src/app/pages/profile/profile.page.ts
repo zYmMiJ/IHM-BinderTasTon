@@ -223,5 +223,4 @@ export class ProfilePage implements OnInit {
     });
     toast.present();
   }
-
 }
