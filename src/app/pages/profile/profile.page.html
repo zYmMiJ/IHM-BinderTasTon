@@ -85,9 +85,10 @@
       <ion-label>Mode nuit</ion-label>
       <ion-toggle id="toggle" [(ngModel)]="forFun" (ionChange)="forFunFunc()"></ion-toggle>
     </ion-item>
-      
+    
     <ion-button expand="block" fill="outline" color="danger" (click)="presentAlertConfirm()">Déconnexion</ion-button>
   </ion-list>
+  <ion-button (click)="match()" color="primary">Match</ion-button>
 </ion-content>
 
 <ion-toolbar class="option">

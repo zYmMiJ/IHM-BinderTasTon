@@ -80,7 +80,9 @@ export class ProfilePage implements OnInit {
   goToFightSwipe(){
     this.route.navigate(['/tabs']);
   }
-
+  match() {
+    this.route.navigate(['/match']);
+  }
   editProfil(esurname : string, ename : string, enationality : string, ecity : string, 
     ecountry : string, epseudo : string, esize : string, eweight : string, 
     estudies : string, epunchline : string) {
