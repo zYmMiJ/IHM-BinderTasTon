@@ -13,7 +13,7 @@ export class DiscussPage implements OnInit {
     {
       user: 'Sadok VNR',
       createdAt: 1554090856000,
-      msg: 'gros arrete de parler comme ca parce que tu as tes cousins derriere toi je vais te niqué'
+      msg: 'gros arrete de parler comme ca parce que tu as tes cousins derriere toi je vais te *****'
     },
     {
       user: 'Booba',
