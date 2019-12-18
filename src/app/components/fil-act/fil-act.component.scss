@@ -1,0 +1,29 @@
+#myOpponent{
+  position: absolute;
+  right: 18%;
+  font-size: 11px;
+
+}
+
+#me{
+  position: absolute;
+  left: 0%;
+  font-size: 11px;
+}
+
+#vs{
+  position: absolute;
+  left: 35%;
+  font-size: 11px;
+}
+
+#createAt {
+  position: absolute;
+  left: 22%;
+  font-size: 11px;
+}
+
+ion-note, ion-label{
+  color: black;
+  font-weight: 900;
+  }

@@ -9,7 +9,8 @@ const routes: Routes = [
   { path: 'fight', loadChildren: './pages/fight/fight.module#FightPageModule' },
   { path: 'connection', loadChildren: './pages/connection/connection.module#ConnectionPageModule' },
   { path: 'match', loadChildren: './pages/match/match.module#MatchPageModule' },
-  { path: 'discuss/:id', loadChildren: './pages/discuss/discuss.module#DiscussPageModule'}
+  { path: 'discuss', loadChildren: './pages/discuss/discuss.module#DiscussPageModule'},
+  { path: 'discuss/:id', loadChildren: './pages/discuss/discuss.module#DiscussPageModule'},
 
 ];
 @NgModule({

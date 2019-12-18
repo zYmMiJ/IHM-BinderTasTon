@@ -1,5 +1,5 @@
 <ion-list>
-  <ion-item-sliding>
+  <ion-item-sliding #mess1>
     <ion-item (click)="accessToMessage('Sadok')">
         <ion-avatar slot="start">
             <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
@@ -11,11 +11,11 @@
       <ion-item-option color="danger" (click)="fightHim()">Figth</ion-item-option>
     </ion-item-options>
       <ion-item-options side="end">
-          <ion-item-option (click)="trash($event)"><ion-icon name="trash"></ion-icon>   </ion-item-option>
+          <ion-item-option (click)="trash(mess1)"><ion-icon name="trash"></ion-icon>   </ion-item-option>
       </ion-item-options>
   </ion-item-sliding>
 
-    <ion-item-sliding>
+    <ion-item-sliding #mess2>
         <ion-item (click)="accessToMessage( 'Ducbooba')">
             <ion-avatar slot="start">
                 <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
@@ -27,11 +27,11 @@
             <ion-item-option color="danger" (click)="fightHim()">Figth</ion-item-option>
         </ion-item-options>
         <ion-item-options side="end">
-            <ion-item-option (click)="trash($event)"><ion-icon name="trash"></ion-icon>   </ion-item-option>
+            <ion-item-option (click)="trash(mess2)"><ion-icon name="trash"></ion-icon>   </ion-item-option>
         </ion-item-options>
     </ion-item-sliding>
 
-    <ion-item-sliding>
+    <ion-item-sliding #mess3>
         <ion-item (click)="accessToMessage('LeRajeuKevin')">
             <ion-avatar slot="start">
                 <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
@@ -43,11 +43,11 @@
             <ion-item-option color="danger" (click)="fightHim()">Figth</ion-item-option>
         </ion-item-options>
         <ion-item-options side="end">
-            <ion-item-option (click)="trash($event)"><ion-icon name="trash"></ion-icon>   </ion-item-option>
+            <ion-item-option (click)="trash(mess3)"><ion-icon name="trash"></ion-icon>   </ion-item-option>
         </ion-item-options>
     </ion-item-sliding>
 
-    <ion-item-sliding>
+    <ion-item-sliding #mess4>
         <ion-item (click)="accessToMessage('SadokVNR')">
             <ion-avatar slot="start">
                 <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
@@ -59,11 +59,11 @@
             <ion-item-option color="danger" (click)="fightHim()">Figth</ion-item-option>
         </ion-item-options>
         <ion-item-options side="end">
-            <ion-item-option (click)="trash($event)"><ion-icon name="trash"></ion-icon>   </ion-item-option>
+            <ion-item-option (click)="trash(mess4)"><ion-icon name="trash"></ion-icon>   </ion-item-option>
         </ion-item-options>
     </ion-item-sliding>
 
-    <ion-item-sliding>
+    <ion-item-sliding #mess5>
         <ion-item (click)="accessToMessage('Chiquita')" >
             <ion-avatar slot="start">
                 <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
@@ -75,7 +75,7 @@
             <ion-item-option color="danger" (click)="fightHim()">Figth</ion-item-option>
         </ion-item-options>
         <ion-item-options side="end">
-            <ion-item-option (click)="trash($event)"><ion-icon name="trash"></ion-icon>   </ion-item-option>
+            <ion-item-option (click)="trash(mess5)"><ion-icon name="trash"></ion-icon>   </ion-item-option>
         </ion-item-options>
     </ion-item-sliding>
 
