@@ -3,19 +3,21 @@
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
+      <ion-title style="text-align: center;">Fiche de Combat</ion-title>
+     
     </ion-buttons>
-  </ion-toolbar>
+  </ion-toolbar>   
 </ion-header>
 
 <ion-content>
   
   <ion-item class="vs" lines="full" (click)="testClick()">
-    <ion-thumbnail slot="start">
-      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==">
+    <ion-thumbnail slot="start">  
+      <img class="img-start" src="../../../assets/img/user/kevin.jpg">
     </ion-thumbnail>
     <img class="middle" src="../../../assets/img/Vs.png" height="100">
     <ion-thumbnail slot="end">
-      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==">
+      <img class="img-end" src="../../../assets/img/user/booba-.jpg">
     </ion-thumbnail>
   </ion-item>
 
@@ -23,13 +25,13 @@
 
   <ion-grid class="info">
     <ion-row>
-      <ion-col size="3">
+      <ion-col class="start" size="3">
         Start
       </ion-col>
       <ion-col>
         Age
       </ion-col>
-      <ion-col size="3">
+      <ion-col class="end" size="3">
         End
       </ion-col>
     </ion-row>
@@ -37,13 +39,13 @@
   
   <ion-grid class="info">
     <ion-row>
-      <ion-col size="3">
+      <ion-col class="start" size="3">
         Start
       </ion-col>
       <ion-col>
         Taille  
       </ion-col>
-      <ion-col size="3">
+      <ion-col class="end" size="3">
         End
       </ion-col>
     </ion-row>
@@ -51,13 +53,13 @@
   
   <ion-grid class="info">
     <ion-row>
-      <ion-col size="3">
+      <ion-col class="start" size="3">
         Start
       </ion-col>
       <ion-col>
         Poids
       </ion-col>
-      <ion-col size="3">
+      <ion-col class="end" size="3">
         End
       </ion-col>
     </ion-row>
@@ -65,13 +67,13 @@
 
   <ion-grid class="info">
     <ion-row>
-      <ion-col size="3">
+      <ion-col class="start" size="3">
         Start
       </ion-col>
       <ion-col>
         Honnor
       </ion-col>
-      <ion-col size="3">
+      <ion-col class="end" size="3">
         End
       </ion-col>
     </ion-row>

@@ -1,4 +1,4 @@
-<div id="swipecard" class="card" (touchstart)="start($event)"
+<div id="swipecard" class="card-perso" (touchstart)="start($event)"
 (swipeleft)="generate()"
 (swiperight)="swiperight($event)"
 (swipeLeftperso)="defaultSwipeLeft()"
@@ -17,7 +17,7 @@
     
       <ion-card-content>
 
-            <ion-row class="description-card ">
+            <ion-row class="description-card">
                 <ion-col>
                     {{user[inc].punchline}}
                 </ion-col>

@@ -10,14 +10,25 @@
  .middle{
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;  
     width: 40%;
  }
- .vs{
-     margin-top: 2%;
- }
-
+.vs{
+    margin-top: 2%;
+}
 .info{
     text-align: center;
     border-bottom: 1px solid #c7c4c4;
+}
+.start{
+    color: #4447fa;
+}
+.end{
+    color: #eb0303;
+}
+.img-start{
+    box-shadow: -10px 5px 5px #4447fa;
+}
+.img-end{
+    box-shadow: 10px 5px 5px #eb0303;
 }

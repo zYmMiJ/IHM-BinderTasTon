@@ -155,7 +155,7 @@ export class CardProfileComponent implements OnInit {
     }
   }
   flip() {
-    let card = document.querySelector('.card');
+    let card = document.querySelector('.card-perso');
     let card_face = document.querySelector('.card__face--front');
     card_face.classList.toggle('is-invisible');
     card.classList.toggle('is-flipped');

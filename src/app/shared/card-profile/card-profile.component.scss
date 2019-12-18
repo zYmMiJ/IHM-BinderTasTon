@@ -6,7 +6,7 @@ $p-darkblack: #303238;
     overflow: hidden;
   }
   
-  .card {  
+  .card-perso{  
     position: relative;
 
     max-width: 500px;
@@ -17,7 +17,7 @@ $p-darkblack: #303238;
     box-shadow: -1px 15px 30px -12px black;
   }
   
-  .card.is-flipped {
+  .card-perso.is-flipped {
     transform: translateX(-100%) rotateY(-180deg);
   }
   
