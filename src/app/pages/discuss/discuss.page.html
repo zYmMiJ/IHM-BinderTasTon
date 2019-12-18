@@ -1,6 +1,6 @@
 <app-header></app-header>
 
-<ion-content>
+<ion-content #messageContent>
 
  <ion-grid>
    <ion-row *ngFor="let message of messages">
@@ -8,7 +8,7 @@
      <ion-col size="9" *ngIf="currentUser !== message.user" class="message other-message">
        <b>{{ message.user }}</b><br/>
        <span>{{ message.msg }}</span>
-       <div class="time" text-right><br>
+       <div class="time" class="ion-text-right">
          {{ message.createdAt | date:'short' }}
        </div>
      </ion-col>
@@ -16,7 +16,7 @@
      <ion-col offset="3" size="9" *ngIf="currentUser === message.user" class="message my-message">
        <b>{{ message.user }}</b><br/>
        <span>{{ message.msg }}</span>
-       <div class="time" text-right><br>
+       <div class="time" class="ion-text-right">
          {{ message.createdAt | date:'short' }}
        </div>
      </ion-col>
@@ -27,13 +27,13 @@
 
 <ion-footer>
   <ion-toolbar light="light">
-    <ion-row align-items-center no-padding>
+    <ion-row class="ion-align-items-center ion-no-padding">
       <ion-col size="10">
         <textarea autosize maxRows="4" [(ngModel)]="newMsg" class="message-input"></textarea>
       </ion-col>
       <ion-col size="2">
         <ion-button fill="clear" color="primary" [disabled]="newMsg === ''" class="msg-btn"
-        (click)="sendMessage()"> <ion-icon name="send"></ion-icon></ion-button>
+        (click)="sendMessage();"> <ion-icon name="send"></ion-icon></ion-button>
       </ion-col>
     </ion-row>
   </ion-toolbar>

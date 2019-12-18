@@ -67,7 +67,7 @@ export class DiscussPage implements OnInit {
     this.newMsg = '';
     setTimeout(() => {
       this.content.scrollToBottom(200);
-    });
+    }, 10);
   }
 
 }
