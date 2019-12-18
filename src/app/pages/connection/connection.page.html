@@ -25,7 +25,7 @@
         <line class="cls-2" x1="208.59" y1="370.93" x2="192.7" y2="320.93"/><line class="cls-2" x1="208.59" y1="370.93" x2="354.95" y2="404.93"/>
         <line class="cls-2" x1="354.95" y1="404.93" x2="368.95" y2="332.93"/></g></g></svg>
 
-    <ion-card-title class="ion-margin-top">Connection</ion-card-title>
+    <ion-card-title class="ion-margin-top">Connexion</ion-card-title>
 
     <ion-card-content>
       <ion-input #user placeholder="Nom d'utilisateur, téléphone ou email" type="text"></ion-input>
@@ -102,11 +102,11 @@
     <ion-card-content>
       <ion-item>
         <ion-label position="floating">Nom</ion-label>
-        <ion-input #sname type="text"></ion-input>
+        <ion-input #sname type="text" maxlength="25"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="floating">Prénom</ion-label>
-        <ion-input #name type="text"></ion-input>
+        <ion-input #name type="text" maxlength="25"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="floating">Date de naissance</ion-label>
@@ -114,11 +114,11 @@
       </ion-item>
       <ion-item>
         <ion-label position="floating">Email</ion-label>
-        <ion-input #email type="email" inputmode="email" pattern="email"></ion-input>
+        <ion-input #email type="email" inputmode="email" pattern="email" maxlength="50"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="floating">Pseudo</ion-label>
-        <ion-input #pseudo type="text"></ion-input>
+        <ion-input #pseudo type="text" maxlength="15"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="floating">Ville</ion-label>
