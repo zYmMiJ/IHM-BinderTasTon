@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { DiscussPage } from './discuss.page';
 import {MessagesPage} from "../messages/messages.page";
+import {SharedModule} from "../../shared/shared.module";
 
 const routes: Routes = [
   {
