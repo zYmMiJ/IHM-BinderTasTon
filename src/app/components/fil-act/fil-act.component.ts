@@ -37,6 +37,7 @@ export class FilActComponent implements OnInit {
     }
   ];
 
+  victory : boolean;
   constructor() { }
 
   ngOnInit() {}
@@ -49,5 +50,11 @@ export class FilActComponent implements OnInit {
     }
   }
 
-
+  getColorshade(filact):string{
+    if(filact.isVictory === true){
+      return 'success-shade';
+    } else {
+      return 'danger-shade';
+    }
+  } 
 }

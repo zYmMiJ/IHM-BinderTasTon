@@ -1,18 +1,18 @@
 <ion-list *ngFor="let f of filact">
-    <ion-item-sliding>
-        <ion-item [color]="getColor(f)">
+   
+        <ion-item [color]="getColorshade(f)" [className]="f.isVictory ? 'vclass' : 'dclass'" class="i" lines="none" >
             <ion-avatar slot="start">
                 <img src="{{f.avatarMe}}">
             </ion-avatar>
             <ion-note id="me" align-self-start>God</ion-note>
             <ion-note id="vs" align-self-start>VS</ion-note>
             <ion-note id="myOpponent" align-self-start>{{f.oppenentName}}</ion-note>
-            <ion-label color="dark" *ngIf="f.isVictory" text-center>YOU WIN</ion-label>
-            <ion-label color="dark" *ngIf="!(f.isVictory)" text-center>YOU LOOSE</ion-label>
+            <ion-label [color]="getColor(f)" *ngIf="f.isVictory" text-center>YOU WIN</ion-label>
+            <ion-label  [color]="getColor(f)" *ngIf="!(f.isVictory)" text-center>YOU LOOSE</ion-label>
             <ion-note id="createAt" align-self-end>{{f.createdAt | date: 'short'}}</ion-note>
             <ion-avatar slot="end">
                 <img src="{{f.avatarOpponent}}">
             </ion-avatar>
         </ion-item>
-    </ion-item-sliding>
+ 
 </ion-list>

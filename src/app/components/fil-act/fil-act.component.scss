@@ -23,7 +23,15 @@
   font-size: 11px;
 }
 
+.vclass{
+  border-left: solid 5px #66BB6A;
+  background-color: rgba(102, 187, 106, 0.486);
+}
+.dclass{
+  border-left: solid 5px rgb(255, 0, 0);
+  background-color: rgba(255, 0, 0, 0.295);
+}
 ion-note, ion-label{
-  color: black;
+
   font-weight: 900;
   }

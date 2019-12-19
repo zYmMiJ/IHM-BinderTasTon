@@ -68,22 +68,22 @@
   <ion-list>
     <ion-item>
       <ion-label>En oral d'IHM</ion-label>
-      <ion-toggle checked disabled="true"></ion-toggle>
+      <ion-toggle color="danger" checked disabled="true"></ion-toggle>
     </ion-item>
 
     <ion-item>
       <ion-label>Maximisé la note d'IHM</ion-label>
-      <ion-toggle></ion-toggle>
+      <ion-toggle color="danger"></ion-toggle>
     </ion-item>
 
     <ion-item>
       <ion-label>Corruption</ion-label>
-      <ion-toggle [(ngModel)]="sausage" disabled="true"></ion-toggle>
+      <ion-toggle color="danger" [(ngModel)]="sausage" disabled="true"></ion-toggle>
     </ion-item>
 
     <ion-item>
       <ion-label>Mode nuit</ion-label>
-      <ion-toggle id="toggle" [(ngModel)]="forFun" (ionChange)="forFunFunc()"></ion-toggle>
+      <ion-toggle color="danger" id="toggle" [(ngModel)]="forFun" (ionChange)="forFunFunc()"></ion-toggle>
     </ion-item>
     
     <ion-button expand="block" fill="outline" color="danger" (click)="presentAlertConfirm()">Déconnexion</ion-button>
